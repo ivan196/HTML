@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Página con Botones</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+
+		function cambiarColor(color) {
+
+			document.body.style.backgroundColor = color;
+		}
+
+		function cambiarFuente(tam) {
+
+			var p;
+
+			p = document.getElementById('parrafo');
+			p.style.fontSize = tam;
+		}
+
+	</script>
+
+</head>
+<body>
+
+	<p id="parrafo">
+		
+		La loli de Plastic Memories es de IVÁN
+		
+		<p>
+			<img src="imagenes/azul.jpg" onclick="cambiarColor('blue')">
+			<img src="imagenes/verde.jpg" onclick="cambiarVerde('green')">
+		</p>
+	</p>
+
+	<p onclick="cambiarFuente('12pt')"> cambio a 12 </p>
+
+	<p onclick="cambiarFuente('20pt')"> cambio a 20 </p>
+
+	<p onclick="cambiarFuente('30pt')"> cambia a 30 </p>
+
+	<p onclick="cambiarFuente('40pt')"> cambia a 40 </p>
+
+</body>
+</html>

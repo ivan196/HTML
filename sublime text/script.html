@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi página con script</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+	function saludo(){
+		// cuerpo de la función
+		alert("hola amigo lolicon");
+	}
+	function dentroparrafo(){
+		alert("dentro parrafo");
+	}
+	function escribenombre(){
+		var p;
+
+		p = document.getElementById("miPárrafo");
+		p.innerHTML += "y me llamo ivan";
+	}
+	</script>
+</head>
+<body>
+	<p id="miPárrafo" onclick="escribenombre()" onmousemove="dentroparrafo()">
+		Mi página con script
+	</p>
+</body>
+</html>
